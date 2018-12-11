@@ -8,6 +8,10 @@
                         Preencha os campos abaixo para acessar sua conta!
                         
                 <div .col-12>
+                    $maybe msg <- msg
+                        <div class="alert alert-danger">
+                            #{msg}
+                
                     <form .form .formulario action=@{LoginR} method=post enctype=#{enctype}>
                         ^{widgetFormLogin}
                         <input type="submit" value="Acessar" .btn .btn-primary .my-2>

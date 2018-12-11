@@ -10,3 +10,7 @@ Password
     a8ddc0b100fefcbbc283c8ba571239cf3d2b4d605f48aaf0c5ff72143e6c5e07
 URI
     postgres://iwhbagqdrycltx:a8ddc0b100fefcbbc283c8ba571239cf3d2b4d605f48aaf0c5ff72143e6c5e07@ec2-23-21-188-236.compute-1.amazonaws.com:5432/dfpquvonfrne6n
+
+
+
+psql -h ec2-23-21-188-236.compute-1.amazonaws.com -U iwhbagqdrycltx -d dfpquvonfrne6n

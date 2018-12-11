@@ -5,4 +5,4 @@
 
 /                                   HomeR                           GET 
 
-/login                              LoginR                          GET
+/login                              LoginR                          GET POST

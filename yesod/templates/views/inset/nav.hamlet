@@ -23,7 +23,7 @@
                     
                     <span>
                         Seja bem-vindo, <strong>
-                            Usuario<br>
+                            #{usuarioApelido $ read $ unpack usuario}<br>
                         <small>
                             Ir para o painel do usuário
                             

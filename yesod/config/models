@@ -3,5 +3,6 @@ Usuario
     apelido     Text
     email       Text
     senha       Text
+    deriving Show Read
 
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)
