@@ -1,0 +1,12 @@
+Host
+    ec2-54-83-197-230.compute-1.amazonaws.com
+Database
+    d9li8gumohjpaj
+User
+    tarxaldsnzthix
+Port
+    5432
+Password
+    42c42e4b7ec873cb240fc98c3db0578e284e1a8b7d287f401f9fe83e3b74fa93
+URI
+    postgres://tarxaldsnzthix:42c42e4b7ec873cb240fc98c3db0578e284e1a8b7d287f401f9fe83e3b74fa93@ec2-54-83-197-230.compute-1.amazonaws.com:5432/d9li8gumohjpaj
