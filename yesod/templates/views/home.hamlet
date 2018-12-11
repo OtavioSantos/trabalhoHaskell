@@ -1,0 +1,104 @@
+<header .slide>
+    <div>
+        <a href="">
+            <div .item-cont-box>
+                <img .img-fluid" src=@{StaticR img_noticia_teste_png} alt="">
+
+<main>
+    <div .container-fluid style="border-bottom: 3px solid #f08600">
+        <div .container-first .wrap-content .wrap-content-start .container>
+            <div .row>
+                <div .col-sm-8 .mb-3 .div-vert-right>
+                    <h2 .container-titulo1>
+                        <img src=@{StaticR img_icone_pointer_png} alt="">
+                        DESTAQUES DA SEMANA
+                    
+                    <div .col-12>
+                        <div .row>
+                            <div .col-sm-6 .px-0>
+                                <div .aula .aula-thumb1 .col-12>
+                                    <a href="">
+                                        <div .thumb>
+                                            <img .thumb-rotulo .img-fluid src=@{StaticR img_fundo_thumbrotulo1345_png} alt="">
+                                            
+                                            <div .thumb-desc>
+                                                <h3 .mb-0>
+                                                    <span>
+                                                        NOME DE CURSO TESTE
+                                                <h4>
+                                                    <span>
+                                                        OClock
+                                            
+                                            <img .img-thumb .img-fluid src=@{StaticR img_usuario_cdusuario_aula_teste_jpg} alt="Nome do Curso">
+                                        
+                                        <div .col-12 .mt-2 .px-0>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id tellus viverra, scelerisque mauris a, bibendum nisl.
+                            
+                            <div .col-sm-6 .px-0>
+                                <div .aula .aula-thumb2 .col-12 .px-0>
+                                    <a href="">
+                                        <div .thumb>
+                                            <div .thumb-desc>
+                                                <h3 .mb-0>
+                                                    <span>
+                                                        NOME DE CURSO TESTE
+                                                <h4>
+                                                    <span>
+                                                        OClock
+                                            
+                                            <img .img-thumb .img-fluid src=@{StaticR img_usuario_cdusuario_aula_teste_jpg} alt="Nome do Curso">
+                            
+                            <div .col-12 .px-0 .my-1>
+                                <hr>
+                            
+                            <h2 .container-titulo1>
+                                <img src=@{StaticR img_icone_pointer_png} alt="">
+                                MELHORES RANKEADAS
+                            
+                            <div class="col-12 mb-3">
+                                <div .aula .aula-thumb4 .col-12>
+                                    <a href="">
+                                        <div .row>
+                                            <div .col-sm-4 .pl-0>
+                                                <div .thumb>
+                                                    <img .thumb-rotulo .img-fluid src=@{StaticR img_fundo_thumbrotulo1345_png} alt="">
+                                                
+                                                    <img .img-thumb .img-fluid src=@{StaticR img_usuario_cdusuario_aula_teste_jpg} alt="Nome do curso">
+                                            
+                                            <div .thumb-desc .col-sm-8 .px-0>
+                                                <h3 .mb-0>
+                                                    <span>
+                                                        Nome do Curso
+                                                <h4>
+                                                    <span>
+                                                        OClock
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat sapien vel lobortis bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                
+                <div .col-sm-4>
+                    <h2 .container-titulo1>
+                        <img src=@{StaticR img_icone_pointer_png} alt="">
+                        PATROCINADOS
+                    
+                    <div .col-12>
+                        <div .row>
+                            <div .aula .aula-thumb3 .col-12 .mb-3>
+                                <a href="" title="Nome da aula">
+                                    <div .row>
+                                        <div .col-md-5>
+                                            <div .thumb>
+                                                <img .thumb-rotulo .img-fluid src=@{StaticR img_fundo_thumbrotulo1345_png} alt="">
+                                                
+                                                <img .img-thumb .img-fluid src=@{StaticR img_usuario_cdusuario_aula_teste_jpg} alt="Nome da aula">
+                                        
+                                        <div .col-md-7 .px-0>
+                                            <h3 mb-0>
+                                                <span>
+                                                    NOME DE CURSO TESTE
+                                            <h4>
+                                                <span>
+                                                    OClock
+                    
+                    <div .col-12 .px-0 .my-1>
+                        <hr>

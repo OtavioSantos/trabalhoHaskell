@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Luckiest+Guy|Orbitron|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+body{
+    font-family: 'Karla', 'Helvetica';
+    font-size: 1rem;
+    color: #f2f2f2;
+    background: #1b1b1b;
+}
+
+a{
+    color: #42c2fd;
+}
+    
+/* MENU */
+#menu-topo{
+    z-index: 999;
+    position: relative;
+    padding: 0.4rem 15px !important;
+    background: #1b1b1b !important;
+}
+
+#acessoUsuario strong, .container-titulo1, .aula h3{
+    font-family: 'Orbitron', sans-serif;
+}
+
+#menu-institucional{
+    z-index: 3;
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    font-size: 0.8rem;
+    border: 5px solid #1b1b1b;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #f08600;
+}
+
+    #menu-institucional a{
+        padding: 5px 10px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+#menu-topo .collapse div:first-child{
+    width: 585px;
+}
+
+/* ÁREA DE ACESSO */
+.btnAcesso-Desl{
+    padding: 5px 7px;
+    line-height: 16px;
+    border: 1px solid #f08600;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+    .btnAcesso-Desl strong{
+        color: #f08600;
+    }
+    
+    .btnAcesso-Desl small{
+        color: #959595;
+    }
+/* FIM AREA DE ACESSO */
+/* FIM MENU*/
+
+/* CABEÇALHO DAS PÁGINAS */
+header{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    border-bottom: 5px solid #f08600;
+}
+
+    .video-fundo{
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 0px;
+    }
+
+.topo-item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-size: cover !important;
+    overflow: hidden;
+}
+
+    .item-cont-box{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+/* FIM CABEÇALHO DAS PÁGINAS */
+
+/* CONTAINERS */
+.container-first{
+    background: #1b1b1b;
+}
+
+.container-titulo1{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #f08600;
+    stroke: 3px #FFF;
+    text-shadow: 0px 0px 1px #FFF
+}
+
+    .wrap-content{
+        padding-top: 35px;
+        padding-bottom: 45px;
+    }
+    
+    .wrap-content-start::before{
+        content: "";
+        position: absolute;
+        width: 102%;
+        height: 154px;
+        left: -12px;
+        background-size: 100% auto !important;
+        background-repeat: no-repeat !important;
+        background-position: center center;
+    }
+    
+    .wrap-content-start:before{
+        height: 360px;
+        top: -30px;
+        background: url(../img/fundo/first-content-border-top.png);
+    }
+/* FIM CONTAINERS */
+
+/* AULAS E CURSOS */
+.aula{
+    padding-left: 0px;
+}
+
+.thumb{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0px 3px 5px #000;
+    transition: 0.5s;
+}
+
+.img-thumb{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+    transition: 0.2s ease-in-out;
+}
+
+    .thumb-rotulo{
+        z-index: 3;
+        position: absolute;
+    }
+
+.aula-thumb1 .thumb-desc{
+    z-index: 1;
+    position: absolute;
+    padding: 5px 10px;
+    bottom: 0px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.aula-thumb2 .thumb{
+    height: 120px;
+    margin-bottom: 15px
+}
+    
+.aula-thumb2 .thumb-desc{
+    z-index: 1;
+    position: absolute;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+.aula-thumb5 h3{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.aula-avaliacao{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+}
+
+.aula h3{
+    line-height: 14px;
+}
+
+.aula h3 span{ /* NOME DO CURSO/AULA */
+    padding: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #4dc2ff;
+    background: #1b1b1b;
+    text-transform: uppercase;
+}
+
+.aula h4 span{ /* NOME DO USUÁRIO */
+    padding: 5px;
+    font-size: 0.8rem;
+    color: #fff;
+    background: #4dc2ff;
+}
+
+.aula p{
+    color: #fff;
+}
+
+.aula-thumb3 h3 span, .aula-thumb4 h3 span, .aula-thumb5 h3 span{
+    padding: 0px;
+}
+
+.aula:hover .img-thumb{
+    transform: scale(1.1);
+    opacity: 0.4;
+}
+
+.aula:hover .thumb{
+    background: #000;
+}
+
+    /* ANIMAÇÕES PARA THUMB1 */
+    .aula-thumb1:hover .thumb-desc{
+        margin-bottom: 10px;
+    }
+    /* FIM ANIMAÇÕES PARA THUMB1 */
+
+    /* ANIMAÇÕES PARA THUMB2 */
+    .aula-thumb2:hover .thumb-desc{
+        margin-left: 10px;
+        background: none;
+    }
+    /* FIM ANIMAÇÕES PARA THUMB1 */
+
+/* FIM AULAS E CURSOS */
+
+/* BOTÕES */
+.btn{
+    font-weight: bold;
+    border-radius: 3px;
+    border-bottom: 3px solid transparent;
+}
+
+.btn-primary{
+    border-color: #0056b2;
+}
+
+.btn-link{
+    color: #fff;
+    border-bottom-color: #0377b3;
+    background: #4dc2ff;
+}
+/* FIM BOTÕES */
+
+/* TEXTO */
+.text-destaque1{
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    text-shadow: -2px 2px 2px #b06200;
+    background: #f08600;
+}
+
+    .texto-prop-desc{
+        padding: 10px 10px;
+        font-size: 1.2rem; 
+        color: #fff;
+        border-radius: 3px;
+        background: rgba(77, 194, 255, 0.1);
+    }
+    
+form label{
+    position: absolute;
+    margin-left: 10px;
+    color: #f08600;
+}
+/* FIM TEXTO */
+
+/* FORMULARIO */
+.input-geral{
+    height: 35px;
+    padding: 0px !important;
+    color: #fff !important;
+}
+/* FIM FORMULÁRIO */
+
+/* MODAL */
+.modal{
+    display: block;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+    .modal-black-simple{
+        background: rgba(0, 0, 0, 0.6);
+    }
+/* FIM MODAL */
+
+.newsletter{
+    max-width: 340px;
+    padding: 20px;
+    background: url(../img/fundo/newsletter.png);
+    background-size: cover;
+}
+
+/* DIVISÕES */
+.div-vert-right{
+    border-right: 1px solid #2b2b2b;
+}
+
+.divisor-red-h{
+    height: 17px;
+    background: url(../img/fundo/divisor-rubi-red.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* FIM DIVISÕES */
+
+/* ANIMAÇÕES */
+/* FIM ANIMAÇÕES */
+
+/*SUBSTITUINDO BOOTSTRAP*/
+a:hover{
+    text-decoration: none !important;
+}
+
+button{
+    cursor: pointer;
+}
+
+hr{
+    background: #2b2b2b;
+}
+
+.input-group{
+    border: 1px solid #2b2b2b;
+    border-radius: 3px !important;
+    background: #1b1b1b;
+}
+
+    .input-group button[type='submit']{
+        padding: 5px 25px;
+        color: #f08600;
+        border: none;
+        background: #2b2b2b;
+    }
+
+    .form-control:focus{
+        border: 1px solid #f08600;
+        background: #0b0b0b;
+        color: #f08600;
+        box-shadow: 0px 0px 3px #f08600;
+    }
+
+.form-control{
+    padding: 2px 10px !important;
+    color: #f08600;
+    border: none;
+    background: #0b0b0b;
+}
+
+.container{
+    z-index: 2;
+    position: relative;
+    border-radius: 3px;
+}
+
+.img-fluid{
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 1200px){
+    /* CONTAINER */
+    .container-first{
+        margin-top: -320px;
+    }
+    /* FIM CONTAINER */
+}

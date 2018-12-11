@@ -16,12 +16,14 @@ import Import
 import Text.Lucius
 import Text.Julius
 
+widgetNav :: Maybe Text -> Widget
+widgetNav logado = $(whamletFile "templates/views/inset/nav.hamlet")
+
 getHomeR :: Handler Html
-getHomeR = defaultLayout $ do 
-        toWidgetHead [hamlet|
-                <script src=@{StaticR js_jquery_min_js}>
-                <script src=@{StaticR js_script_js}>
-        |]
-        addStylesheet $ StaticR css_bootstrap_min_css
-        addStylesheet $ StaticR css_geral_css
-        $(whamletFile "templates/home.hamlet")
+getHomeR = do
+        defaultLayout $ do 
+                addStylesheet $ StaticR css_bootstrap_css
+                addStylesheet $ StaticR css_style_css
+                addStylesheet $ StaticR css_fontawesome_min_css
+                addStylesheet $ StaticR css_solid_min_css
+                $(whamletFile "templates/views/home.hamlet")
