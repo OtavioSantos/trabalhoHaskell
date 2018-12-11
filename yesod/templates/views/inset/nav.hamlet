@@ -1,0 +1,54 @@
+<nav id="menu-topo" class="navbar navbar-expand-md">
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#menu-institucional" aria-controls="menu-institucional" aria-expanded="false" aria-label="Toggle navigation" style="background: #f08600">
+        <i class="fa fa-align-justify">
+    
+    <a href="/" class="navbar-brand d-flex align-items-start m-0 mr-2" title="gameDeveloper">
+        <img src=@{StaticR img_logo_logotipo_png} alt="game developer">
+    
+    <div id="menu-items" class="collapse navbar-collapse">
+        <div id="menu-search" class="d-flex align-items-center">
+            <form class="w-100">
+                <div class="form-row w-100 m-0">
+                    <div class="col-12 p-0">
+                        <div class="input-group w-100 m-0">
+                            <input type="search" id="" class="form-control" name="" placeholder="Pesquisar...">
+                            
+                            <div class="input-group-prepend">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+           
+        $maybe usuario <- logado 
+            <div id="acessoUsuario" class="navbar-nav ml-auto">
+                <a href="#" class="btnAcesso-Desl d-flex align-items-center justify-content-center" title="Logar e cadastrar usuário">
+                    <i class="fa fa-user-circle mr-2" style="font-size: 1.5rem">
+                    
+                    <span>
+                        Seja bem-vindo, <strong>
+                            Usuario<br>
+                        <small>
+                            Ir para o painel do usuário
+                            
+        $nothing                   
+            <div id="acessoUsuario" class="navbar-nav ml-auto">
+                <a href="login" class="btnAcesso-Desl d-flex align-items-center justify-content-center" title="Logar e cadastrar usuário">
+                    <i class="fa fa-user-circle mr-2" style="font-size: 1.5rem">
+                    
+                    <span>
+                        Seja bem-vindo, <strong>
+                            Usuário<br>
+                        <small>
+                            Clique para logar/cadastrar!
+    
+    <div id="menu-institucional" class="navbar-collapse collapse">
+        <ul id="navigation" class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    O PROJETO
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    UPDATES
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    FÓRUM
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    CONTATO

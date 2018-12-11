@@ -1,10 +1,7 @@
-Partida
-    jogador1    Text
-    jogador2    Text
-    partida     Int
-    rodada      Int
-    dados1      Text
-    dados2      Text
-    deriving Show
+Usuario
+    nome        Text
+    apelido     Text
+    email       Text
+    senha       Text
 
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)

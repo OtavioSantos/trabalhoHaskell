@@ -1,0 +1,13 @@
+<div .painel>
+    <div .container>
+        <div .row>
+            <div .tab-menu .col-sm-4>
+                <h2>
+                    LOGIN<br>
+                    <small>
+                        Preencha os campos abaixo para acessar sua conta!
+                        
+                <div .col-12>
+                    <form .form .formulario action=@{LoginR} method=post enctype=#{enctype}>
+                        ^{widgetFormLogin}
+                        <input type="submit" value="Acessar" .btn .btn-primary .my-2>
