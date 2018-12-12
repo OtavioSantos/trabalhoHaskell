@@ -29,7 +29,7 @@
                             
         $nothing                   
             <div id="acessoUsuario" class="navbar-nav ml-auto">
-                <a href="login" class="btnAcesso-Desl d-flex align-items-center justify-content-center" title="Logar e cadastrar usuário">
+                <a href=@{LoginR} class="btnAcesso-Desl d-flex align-items-center justify-content-center" title="Logar e cadastrar usuário">
                     <i class="fa fa-user-circle mr-2" style="font-size: 1.5rem">
                     
                     <span>

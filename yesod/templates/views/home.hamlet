@@ -1,6 +1,6 @@
 ^{widgetNav logado}
 
-<header .slide>
+<header .slide style="background: url(@{StaticR img_fundo_fundoHome_jpg})">
     <div>
         <a href="">
             <div .item-cont-box>
@@ -59,24 +59,25 @@
                                 MELHORES RANKEADAS
                             
                             <div class="col-12 mb-3">
-                                <div .aula .aula-thumb4 .col-12>
-                                    <a href="">
-                                        <div .row>
-                                            <div .col-sm-4 .pl-0>
-                                                <div .thumb>
-                                                    <img .thumb-rotulo .img-fluid src=@{StaticR img_fundo_thumbrotulo1345_png} alt="">
+                                $forall (Entity aulaid aula) <- aulas
+                                    <div .aula .aula-thumb4 .col-12>
+                                        <a href=@{AulaR aulaid}>
+                                            <div .row>
+                                                <div .col-sm-4 .pl-0>
+                                                    <div .thumb>
+                                                        <img .thumb-rotulo .img-fluid src=@{StaticR img_fundo_thumbrotulo1345_png} alt="">
+                                                    
+                                                        <img .img-thumb .img-fluid  src="/static/img/usuario/cdusuario/aula/#{aulaImg aula}" alt="Nome do curso">
                                                 
-                                                    <img .img-thumb .img-fluid src=@{StaticR img_usuario_cdusuario_aula_teste_jpg} alt="Nome do curso">
-                                            
-                                            <div .thumb-desc .col-sm-8 .px-0>
-                                                <h3 .mb-0>
-                                                    <span>
-                                                        Nome do Curso
-                                                <h4>
-                                                    <span>
-                                                        OClock
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat sapien vel lobortis bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <div .thumb-desc .col-sm-8 .px-0>
+                                                    <h3 .mb-0>
+                                                        <span>
+                                                            #{aulaTitulo aula}
+                                                    <h4>
+                                                        <span>
+                                                            OClock
+                                                    <p>
+                                                        #{aulaDescricao aula}
                 
                 <div .col-sm-4>
                     <h2 .container-titulo1>

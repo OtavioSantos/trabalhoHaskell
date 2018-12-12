@@ -9,9 +9,20 @@
                         
                 <div .col-12>
                     $maybe msg <- msg
-                        <div class="alert alert-danger">
+                        <div .alert .alert-warning>
                             #{msg}
                 
                     <form .form .formulario action=@{LoginR} method=post enctype=#{enctype}>
                         ^{widgetFormLogin}
                         <input type="submit" value="Acessar" .btn .btn-primary .my-2>
+                        
+            <div .tab-menu .col-sm-7 .ml-1>
+                <h2>
+                    CRIAR CONTA<br>
+                    <small>
+                        Preencha os campos abaixo para criar sua conta!
+                        
+                <div .col-12>
+                    <form .form .formulario action=@{CadastrarUsuarioR} method=post enctype=#{enctype}>
+                        ^{widgetFormCadastro}
+                        <input type="submit" value="Cadastrar" .btn .btn-primary .my-2 .btn-cadastrar-usuario>

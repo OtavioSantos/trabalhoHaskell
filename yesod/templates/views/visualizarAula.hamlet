@@ -1,0 +1,25 @@
+^{widgetNav logado}
+
+<header .slide style="background: url(/static/img/usuario/cdusuario/aula/#{aulaImg aula})">
+    <div>
+        <a href="">
+            <div .item-cont-box>
+                
+<main>
+    <div .container-fluid style="border-bottom: 3px solid #f08600">
+        <div .container-first .wrap-content .wrap-content-start .container>
+            <div .row>
+                <div .col-sm-12 .mb-3>
+                    <h1 .container-titulo1>
+                        <img src=@{StaticR img_icone_pointer_png} alt="">
+                        #{aulaTitulo aula}
+                        
+                    <video>
+                        <source src="/static/img/usuario/cdusuario/aula/#{aulaVideo aula}" type="video/mp4">
+                        
+                <div .col-sm-12>
+                        
+                    <h2 .container-titulo1>
+                        TUTORIAL
+                    <p>
+                        #{aulaTutorial aula}

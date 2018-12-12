@@ -38,3 +38,10 @@ instance RenderMessage App FormMessage where
 
 instance HasHttpManager App where
     getHttpManager = appHttpManager
+    
+usuarioOn :: Handler AuthResult
+usuarioOn = do 
+    logado <- lookupSession "_USR"
+    case logado of
+        Just _ -> return Authorized
+        Nothing -> return AuthenticationRequired

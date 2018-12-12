@@ -14,17 +14,36 @@ formLogin :: Form (Text,Text)
 formLogin = renderBootstrap $ (,) 
     <$> areq textField "Login: " Nothing
     <*> areq passwordField "Senha: " Nothing
+    
+formUsuario :: Form Usuario
+formUsuario = renderBootstrap $ Usuario
+    <$> areq textField 
+        FieldSettings{fsId=Just "nomeUsuario",
+                      fsLabel="Nome: ",
+                      fsTooltip= Nothing,
+                      fsName= Nothing,
+                      fsAttrs=[("class","col-8")]} Nothing
+    <*> areq textField 
+        FieldSettings{fsId=Just "apelido",
+                      fsLabel="Apelido: ",
+                      fsTooltip= Nothing,
+                      fsName= Nothing,
+                      fsAttrs=[("class","col-4")]} Nothing
+    <*> areq textField "E-mail: " Nothing
+    <*> areq textField "Senha: " Nothing
 
 getLoginR :: Handler Html
 getLoginR = do 
     msg <- getMessage
     (widgetFormLogin, enctype) <- generateFormPost formLogin
+    (widgetFormCadastro, enctype) <- generateFormPost formUsuario
     defaultLayout $ do 
         toWidgetHead [hamlet|
             <script src=@{StaticR js_jquery_js}>
             <script src=@{StaticR js_bootstrap_min_js}>
             <script src=@{StaticR js_fontawesome_min_js}>
             <script src=@{StaticR js_solid_min_js}>
+            <script src=@{StaticR js_acesso_js}>
         |]
         addStylesheet $ StaticR css_bootstrap_css
         addStylesheet $ StaticR css_style_css
@@ -49,6 +68,18 @@ postLoginR = do
                     |]
                     redirect LoginR
         _ -> redirect LoginR
+        
+postCadastrarUsuarioR :: Handler Html
+postCadastrarUsuarioR = do 
+    ((res,_),_) <- runFormPost formUsuario
+    case res of 
+        FormSuccess usuario -> do 
+            runDB $ insert usuario 
+            setMessage [shamlet|
+                        Usuario cadastrado com sucesso!
+                    |]
+            redirect LoginR
+        _ -> redirect HomeR
         
 postLogoutR :: Handler Html
 postLogoutR = do 

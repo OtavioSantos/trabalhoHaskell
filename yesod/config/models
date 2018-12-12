@@ -4,5 +4,15 @@ Usuario
     email       Text
     senha       Text
     deriving Show Read
+    
+Aula
+    titulo          Text
+    descricao       Text
+    tutorial        Text
+    img             Text
+    video           Text
+    usuarioid       UsuarioId
+    deriving Show
+    
 
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)

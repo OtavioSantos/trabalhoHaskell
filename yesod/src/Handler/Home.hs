@@ -6,7 +6,6 @@
 {-# LANGUAGE QuasiQuotes #-}
 module Handler.Home where
 
-import Import
 import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
@@ -22,6 +21,7 @@ widgetNav logado = $(whamletFile "templates/views/inset/nav.hamlet")
 getHomeR :: Handler Html
 getHomeR = do
         logado <- lookupSession "_USR"
+        aulas <- runDB $ selectList [] [Desc AulaId]
         defaultLayout $ do 
                 toWidgetHead [hamlet|
                     <script src=@{StaticR js_jquery_js}>
