@@ -14,7 +14,7 @@
                         <img src=@{StaticR img_icone_pointer_png} alt="">
                         #{aulaTitulo aula}
                         
-                    <video>
+                    <video controls>
                         <source src="/static/img/usuario/cdusuario/aula/#{aulaVideo aula}" type="video/mp4">
                         
                 <div .col-sm-12>
