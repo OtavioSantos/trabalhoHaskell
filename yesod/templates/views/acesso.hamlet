@@ -1,6 +1,10 @@
 <div .painel>
     <div .container>
         <div .row>
+            <div .col-12>
+                <a href=@{HomeR}>
+                    Página inicial
+                        
             <div .tab-menu .col-sm-4>
                 <h2>
                     LOGIN<br>

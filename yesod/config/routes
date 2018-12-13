@@ -6,5 +6,7 @@
 /                                   HomeR                           GET 
 
 /login                              LoginR                          GET POST
+/logout                             LogoutR                         POST
 /cadastrar-usuario                  CadastrarUsuarioR               POST
+
 /aula/#AulaId                       AulaR                           GET

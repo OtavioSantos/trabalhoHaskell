@@ -1,6 +1,6 @@
 ^{widgetNav logado}
 
-<header .slide style="background: url(/static/img/usuario/cdusuario/aula/#{aulaImg aula})">
+<header .slide style="background: url(/static/img/usuario/cdusuario/aula/#{aulaImg aula});">
     <div>
         <a href="">
             <div .item-cont-box>

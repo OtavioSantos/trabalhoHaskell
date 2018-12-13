@@ -25,7 +25,8 @@
                         Seja bem-vindo, <strong>
                             #{usuarioApelido $ read $ unpack usuario}<br>
                         <small>
-                            Ir para o painel do usuário
+                            <form action=@{LogoutR} method=POST>
+                                <input type="submit" value="Sair" style="background: none; border: none; outline: border">
                             
         $nothing                   
             <div id="acessoUsuario" class="navbar-nav ml-auto">
