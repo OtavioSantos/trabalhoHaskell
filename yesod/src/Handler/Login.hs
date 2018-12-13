@@ -30,7 +30,7 @@ formUsuario = renderBootstrap $ Usuario
                       fsName= Nothing,
                       fsAttrs=[("class","col-4")]} Nothing
     <*> areq textField "E-mail: " Nothing
-    <*> areq textField "Senha: " Nothing
+    <*> areq passwordField "Senha: " Nothing
 
 getLoginR :: Handler Html
 getLoginR = do 

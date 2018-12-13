@@ -101,8 +101,11 @@ header{
 
 /* CONTAINERS */
 .container-first{
+    margin-top: -320px;
     background: #1b1b1b;
 }
+
+
 
 .container-titulo1{
     margin-bottom: 20px;
@@ -167,6 +170,23 @@ video{
         z-index: 3;
         position: absolute;
     }
+    
+.exibir-inf{
+    position: fixed;
+    padding: 5px 10px;
+    z-index: 3;
+    background: #42c2fd;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    left: 0px;
+}
+    
+.aula-thumb4 p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .aula-thumb1 .thumb-desc{
     z-index: 1;
@@ -387,14 +407,6 @@ hr{
 
 .img-fluid{
     border-radius: 3px;
-}
-
-@media screen and (min-width: 1200px){
-    /* CONTAINER */
-    .container-first{
-        margin-top: -320px;
-    }
-    /* FIM CONTAINER */
 }
 
 .painel{

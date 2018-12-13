@@ -5,14 +5,14 @@ Usuario
     senha       Text
     deriving Show Read
     
-Aula
+Aula json
     titulo          Text
     descricao       Text
     tutorial        Text
     img             Text
     video           Text
     usuarioid       UsuarioId
-    deriving Show
+    deriving Show Read
     
 
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)

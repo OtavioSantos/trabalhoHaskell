@@ -27,9 +27,6 @@
                                                 <h3 .mb-0>
                                                     <span>
                                                         NOME DE CURSO TESTE
-                                                <h4>
-                                                    <span>
-                                                        OClock
                                             
                                             <img .img-thumb .img-fluid src=@{StaticR img_usuario_cdusuario_aula_teste_jpg} alt="Nome do Curso">
                                         
@@ -45,9 +42,6 @@
                                                 <h3 .mb-0>
                                                     <span>
                                                         NOME DE CURSO TESTE
-                                                <h4>
-                                                    <span>
-                                                        OClock
                                             
                                             <img .img-thumb .img-fluid src=@{StaticR img_usuario_cdusuario_aula_teste_jpg} alt="Nome do Curso">
                             
@@ -60,7 +54,7 @@
                             
                             <div class="col-12 mb-3">
                                 $forall (Entity aulaid aula) <- aulas
-                                    <div .aula .aula-thumb4 .col-12>
+                                    <div id=@{AulaR aulaid} .aula .aula-thumb4 .col-12>
                                         <a href=@{AulaR aulaid}>
                                             <div .row>
                                                 <div .col-sm-4 .pl-0>
@@ -73,9 +67,6 @@
                                                     <h3 .mb-0>
                                                         <span>
                                                             #{aulaTitulo aula}
-                                                    <h4>
-                                                        <span>
-                                                            OClock
                                                     <p>
                                                         #{aulaDescricao aula}
                 
@@ -99,9 +90,6 @@
                                             <h3 mb-0>
                                                 <span>
                                                     NOME DE CURSO TESTE
-                                            <h4>
-                                                <span>
-                                                    OClock
                     
                     <div .col-12 .px-0 .my-1>
                         <hr>

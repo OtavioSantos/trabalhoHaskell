@@ -28,6 +28,7 @@ getHomeR = do
                     <script src=@{StaticR js_bootstrap_min_js}>
                     <script src=@{StaticR js_fontawesome_min_js}>
                     <script src=@{StaticR js_solid_min_js}>
+                    <script src=@{StaticR js_base_js}>
                 |]
                 addStylesheet $ StaticR css_bootstrap_css
                 addStylesheet $ StaticR css_style_css

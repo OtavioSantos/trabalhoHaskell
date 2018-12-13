@@ -10,3 +10,4 @@
 /cadastrar-usuario                  CadastrarUsuarioR               POST
 
 /aula/#AulaId                       AulaR                           GET
+/dadosAula                          DadosAulaR                      POST

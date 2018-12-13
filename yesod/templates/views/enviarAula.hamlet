@@ -1,0 +1,19 @@
+^{widgetNav logado}
+
+<header .slide>
+    <div>
+        <a href="">
+            <div .item-cont-box>
+            
+<main>
+    <div .container-fluid style="border-bottom: 3px solid #f08600">
+        <div .container-first .wrap-content .wrap-content-start .container>
+            <div .row>
+                <div .col-sm-12 .mb-3>
+                    <h1 .container-titulo1>
+                        <img src=@{StaticR img_icone_pointer_png} alt="">
+                        ENVIAR AULA
+                        
+                    ^<form .form .formulario action="" method=post enctype=#{enctype}>
+                        ^{widgetFormEnvAula}
+                        <input type="submit" value="Acessar" .btn .btn-primary .my-2>
